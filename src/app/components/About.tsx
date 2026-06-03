@@ -5,7 +5,7 @@ const GOLD = "#c9a96e";
 const MUTED = "#8a8a8a";
 const FG = "#f0ede8";
 
-const PHOTO_URL = "https://images.unsplash.com/photo-1554435493-93422e8d1c46?w=600&h=750&fit=crop&auto=format";
+const PHOTO_URL = "https://images.unsplash.com/photo-1543769657-fcf1236421bc?w=600&h=750&fit=crop&auto=format";
 
 export function About() {
   return (
@@ -17,7 +17,7 @@ export function About() {
             <div style={{ position: "absolute", top: "-1.5rem", left: "-1.5rem", right: "1.5rem", bottom: "1.5rem", border: "1px solid rgba(201,169,110,0.2)", pointerEvents: "none" }} />
             <ImageWithFallback
               src={PHOTO_URL}
-              alt="Forensic authorship consultant"
+              alt="Close-up of handwritten journal text"
               style={{ width: "100%", aspectRatio: "4/5", objectFit: "cover", display: "block", filter: "grayscale(30%) contrast(1.05)", position: "relative", zIndex: 1 }}
             />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(17,17,17,0.5) 0%, transparent 50%)", zIndex: 2, pointerEvents: "none" }} />
