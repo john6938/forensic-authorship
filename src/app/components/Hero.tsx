@@ -56,9 +56,9 @@ export function Hero() {
               maxWidth: "42ch",
               marginBottom: "2.25rem",
             }}>
-              Bespoke forensic authorship analysis and evidence-based AI detection
-              for legal teams, police, and educational institutions. Rigorous. Defensible.
-              Expert witness–ready.
+              Bespoke forensic authorship analysis for police forces and legal teams.
+              Evidence-based AI detection consultancy for institutions and companies.
+              Rigorous. Defensible. Expert witness–ready.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#contact" style={{
