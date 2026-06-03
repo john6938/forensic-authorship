@@ -58,8 +58,8 @@ export function Contact() {
 
             <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", marginBottom: "2.5rem" }}>
               {[
-                { icon: Mail, label: "Email", value: "Available on request" },
-                { icon: Phone, label: "Telephone", value: "Available on request" },
+                { icon: Mail, label: "Email", value: "anon@tobedecided.com" },
+                { icon: Phone, label: "Telephone", value: "+44 (0)XX XXXX XXXX" },
                 { icon: MapPin, label: "Location", value: "Birmingham; nationwide instructions accepted" },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>

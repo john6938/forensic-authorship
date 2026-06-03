@@ -24,14 +24,14 @@ export function Footer() {
           </div>
           <div>
             <p style={{ fontFamily: "Inter, sans-serif", color: GOLD, fontSize: "0.68rem", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Contact</p>
-            {["enquiries@forensicauthorship.co.uk", "+44 (0)20 7946 0958", "London, United Kingdom"].map(v => (
+            {["anon@tobedecided.com", "+44 (0)XX XXXX XXXX", "Birmingham, United Kingdom"].map(v => (
               <p key={v} style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.82rem", marginBottom: "0.3rem" }}>{v}</p>
             ))}
           </div>
         </div>
         <div style={{ borderTop: "1px solid rgba(201,169,110,0.08)", paddingTop: "1.5rem", display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "0.5rem" }}>
-          <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.75rem" }}>© 2024 Forensic Authorship Consulting. All rights reserved.</p>
-          <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.75rem" }}>Member: IAFL · UK Register of Expert Witnesses · CIoL</p>
+          <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.75rem" }}>© 2026 Forensic Authorship Consulting. All rights reserved.</p>
+          <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.75rem" }}>Member: British Computer Society · Expert Witness Certificate for Criminal Law</p>
         </div>
       </div>
     </footer>
