@@ -11,14 +11,40 @@ const INPUT_BG = "#242424";
 export function Contact() {
   const [form, setForm] = useState({ name: "", organisation: "", email: "", type: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    setError(false);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "f3d6cb06-decd-4246-a489-c62385015928",
+          name: form.name,
+          organisation: form.organisation,
+          email: form.email,
+          enquiry_type: form.type,
+          message: form.message,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   const inputStyle: React.CSSProperties = {
@@ -137,17 +163,23 @@ export function Contact() {
                     placeholder="Please provide a brief overview. You do not need to share confidential details at this stage."
                     style={{ ...inputStyle, resize: "vertical", lineHeight: 1.65 }} onFocus={focus} onBlur={blur} />
                 </div>
-                <button type="submit" style={{
+                <button type="submit" disabled={sending} style={{
                   backgroundColor: GOLD, color: BG, padding: "1rem 2rem",
                   fontFamily: "Inter, sans-serif", fontSize: "0.78rem", fontWeight: 500,
                   letterSpacing: "0.12em", textTransform: "uppercase", border: "none",
-                  cursor: "pointer", transition: "opacity 0.2s ease", width: "100%",
+                  cursor: sending ? "not-allowed" : "pointer", transition: "opacity 0.2s ease", width: "100%",
+                  opacity: sending ? 0.6 : 1,
                 }}
-                  onMouseEnter={e => (e.currentTarget.style.opacity = "0.85")}
-                  onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+                  onMouseEnter={e => { if (!sending) e.currentTarget.style.opacity = "0.85"; }}
+                  onMouseLeave={e => { if (!sending) e.currentTarget.style.opacity = "1"; }}
                 >
-                  Submit Enquiry
+                  {sending ? "Sending…" : "Submit Enquiry"}
                 </button>
+                {error && (
+                  <p style={{ fontFamily: "Inter, sans-serif", color: "#c0392b", fontSize: "0.82rem", textAlign: "center" }}>
+                    Something went wrong. Please try again or contact us directly.
+                  </p>
+                )}
                 <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.78rem", lineHeight: 1.6, textAlign: "center" }}>
                   All enquiries are treated as strictly confidential. Providing your details
                   does not create an expert witness relationship.
