@@ -119,8 +119,7 @@ export function Contact() {
                   Enquiry Received
                 </h3>
                 <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.9rem", lineHeight: 1.7 }}>
-                  Thank you for reaching out. I will be in contact within one working day to
-                  discuss your matter in confidence.
+                  Thank you for getting in touch. I will be in contact imminently to discuss this matter in confidence.
                 </p>
               </div>
             ) : (
