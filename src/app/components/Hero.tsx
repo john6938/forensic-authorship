@@ -45,9 +45,8 @@ export function Hero() {
               fontWeight: 500,
               marginBottom: "1.75rem",
             }}>
-              When the Question is{" "}
-              <em style={{ color: GOLD, fontStyle: "italic" }}>Who Wrote This</em>
-              {" "}— I Find Out.
+              Forensic authorship:{" "}
+              <em style={{ color: GOLD, fontStyle: "italic" }}>where language becomes evidence.</em>
             </h1>
             <p style={{
               fontFamily: "Inter, sans-serif",
@@ -91,7 +90,7 @@ export function Hero() {
           <div className="md:col-span-2" style={{ display: "flex", flexDirection: "column", gap: "1px", backgroundColor: "rgba(201,169,110,0.12)" }}>
             {[
               { value: "15+", label: "Years of specialist practice" },
-              { value: "200+", label: "Casework matters completed" },
+              { value: "20+", label: "Language-evidence reports submitted" },
               { value: "AI", label: "Detection advisory since 2022" },
               { value: "100%", label: "Methodologically defensible reports" },
             ].map(s => (

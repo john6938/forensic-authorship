@@ -24,9 +24,9 @@ const methodologies = [
 ];
 
 const credentials = [
-  { cat: "Academic", items: ["PhD in Forensic Linguistics, University of Birmingham", "MA Applied Linguistics (Distinction)", "BSc Psychology & Language Sciences"] },
-  { cat: "Professional", items: ["International Association of Forensic Linguists (IAFL)", "UK Register of Expert Witnesses", "Chartered Institute of Linguists (CIoL)"] },
-  { cat: "Court Experience", items: ["Crown Court & High Court expert witness", "Family Court authorship proceedings", "Employment Tribunal linguistic evidence"] },
+  { cat: "Academic", items: ["PhD in Applied Linguistics, Aston Institute for Forensic Linguistics, Aston University", "Multiple Master's degrees"] },
+  { cat: "Professional", items: ["Member of the British Computer Society", "Expert Witness Certificate for Criminal Law"] },
+  { cat: "Research", items: ["Peer-reviewed publications in forensic linguistics", "Conference presentations (UK & international)", "Applied NLP and authorship analysis research"] },
   { cat: "Client Sectors", items: ["UK Police forces & regional crime units", "Russell Group & post-92 universities", "Commercial & criminal defence solicitors"] },
 ];
 
@@ -50,8 +50,7 @@ export function Expertise() {
             </h2>
             <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.92rem", lineHeight: 1.8, marginBottom: "2.25rem" }}>
               Every report is grounded in peer-reviewed methodology and written to withstand
-              cross-examination. Where evidence is uncertain, I say so — expert reliability
-              depends on intellectual honesty.
+              cross-examination. Where evidence is uncertain, I say so; expert reliability depends on intellectual honesty.
             </p>
             <div className="grid grid-cols-2 gap-6">
               {credentials.map(c => (
@@ -62,7 +61,7 @@ export function Expertise() {
                   <ul>
                     {c.items.map(item => (
                       <li key={item} style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.8rem", lineHeight: 1.65, paddingLeft: "1rem", position: "relative", marginBottom: "0.3rem" }}>
-                        <span style={{ position: "absolute", left: 0, color: GOLD }}>—</span>
+                        <span style={{ position: "absolute", left: 0, color: GOLD }}>›</span>
                         {item}
                       </li>
                     ))}

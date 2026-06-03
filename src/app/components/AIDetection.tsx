@@ -12,7 +12,7 @@ const offerings = [
     icon: FileSearch,
     title: "Single-Document Assessment",
     description:
-      "Detailed linguistic examination of a specific submission to determine whether it exhibits features characteristic of large language model generation — with documented rationale for your decision.",
+      "Detailed linguistic examination of a specific submission to determine whether it exhibits features characteristic of large language model generation, with documented rationale for your decision.",
   },
   {
     icon: Brain,
@@ -37,19 +37,19 @@ const offerings = [
 const whyItems = [
   {
     heading: "No tool is reliable on its own.",
-    body: "Turnitin AI, GPTZero, Copyleaks, and similar products produce both false positives and false negatives at documented rates. A positive result from automated software is not evidence of misconduct — it is a reason to investigate further.",
+    body: "Turnitin AI, GPTZero, Copyleaks, and similar products produce both false positives and false negatives at documented rates. A positive result from automated software is not evidence of misconduct; it is a reason to investigate further.",
   },
   {
     heading: "Linguistic analysis provides what software cannot.",
-    body: "Human expert analysis considers register consistency, idiolect, developmental writing patterns, argument structure, and pragmatic coherence — features that distinguish genuine student work from AI output with far greater nuance than any classifier.",
+    body: "Human expert analysis considers register consistency, idiolect, developmental writing patterns, argument structure, and pragmatic coherence: features that distinguish genuine student work from AI output with far greater nuance than any classifier.",
   },
   {
     heading: "Your decisions must be defensible.",
-    body: "Academic misconduct findings have serious consequences for students. Decisions based solely on algorithmic probability scores risk legal challenge, reputational harm, and — most importantly — wrongly penalising honest students.",
+    body: "Academic misconduct findings have serious consequences for students. Decisions based solely on algorithmic probability scores risk legal challenge, reputational harm, and, most importantly, wrongly penalising honest students.",
   },
   {
     heading: "I work for the evidence, not the outcome.",
-    body: "My analysis is conducted independently. I accept instructions from institutions and students alike. Where the evidence is ambiguous, I say so — and ambiguity should favour the student.",
+    body: "My analysis is conducted independently. I accept instructions from institutions and students alike. Where the evidence is ambiguous, I say so, and ambiguity should favour the student.",
   },
 ];
 

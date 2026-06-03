@@ -22,7 +22,7 @@ export function Process() {
       number: "04",
       title: "Reporting",
       description:
-        "A clear, structured written report setting out my findings, the evidence base, and my conclusions — with appropriate caveats. Legal reports comply with CPR Part 35 and equivalent standards.",
+        "A clear, structured written report setting out my findings, the evidence base, and my conclusions, with appropriate caveats. Legal reports comply with CPR Part 35 and equivalent standards.",
     },
     {
       number: "05",

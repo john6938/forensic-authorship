@@ -17,13 +17,13 @@ const legalServices = [
     icon: FileText,
     title: "Authorship Verification",
     description:
-      "Determination of whether a questioned document — statement, confession, will, contract, or threat communication — was authored by the stated individual.",
+      "Determination of whether a questioned document (statement, confession, will, contract, or threat communication) was authored by the stated individual.",
   },
   {
     icon: Scale,
     title: "Authorship Profiling",
     description:
-      "Where no known suspect exists: systematic analysis of anonymous or disputed texts to build a profile of the probable author — dialect, register, education level, and idiolect markers.",
+      "Where no known suspect exists: systematic analysis of anonymous or disputed texts to build a profile of the probable author: dialect, register, education level, and idiolect markers.",
   },
 ];
 
@@ -75,7 +75,7 @@ export function Services() {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { heading: "Threat Communications", body: "Anonymous letters, online messages, ransom notes — linguistic comparison to suspect writing samples." },
+              { heading: "Threat Communications", body: "Anonymous letters, online messages, ransom notes: linguistic comparison to suspect writing samples." },
               { heading: "Disputed Statements", body: "Police interviews, witness statements, and confessions queried as to whether the words are the signatory's own." },
               { heading: "Document Fraud", body: "Wills, contracts, and identity documents where authorship or editorial interference is in question." },
             ].map(({ heading, body }) => (

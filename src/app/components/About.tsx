@@ -40,7 +40,7 @@ export function About() {
               {[
                 { text: "I am an independent forensic linguist with over fifteen years of specialist practice, spanning criminal law, civil litigation, and academic integrity.", bright: true },
                 { text: "In legal contexts, I have provided authorship evidence in Crown Court trials, High Court civil proceedings, and inquests. I am accustomed to the demands of cross-examination and the standards required of expert witnesses." },
-                { text: "A significant and growing part of my practice now concerns AI-generated text. Since 2022 I have advised universities, regulatory bodies, and legal teams on the linguistic features that distinguish human from machine authorship — and the serious evidentiary limitations of automated detection tools." },
+                { text: "A significant and growing part of my practice now concerns AI-generated text. Since 2022 I have advised universities, regulatory bodies, and legal teams on the linguistic features that distinguish human from machine authorship, as well as the serious evidentiary limitations of automated detection tools." },
                 { text: "I operate exclusively as an independent consultant, accepting instructions from institutions and individuals alike. My duty is to the evidence, not to the outcome my instructing party might prefer." },
               ].map(({ text, bright }, i) => (
                 <p key={i} style={{ fontFamily: "Inter, sans-serif", color: bright ? "#c4bfb8" : MUTED, fontSize: "0.92rem", lineHeight: 1.8 }}>
@@ -51,11 +51,10 @@ export function About() {
 
             <div style={{ borderLeft: `2px solid ${GOLD}`, paddingLeft: "1.5rem" }}>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: FG, fontSize: "1.05rem", fontStyle: "italic", lineHeight: 1.6, marginBottom: "0.5rem" }}>
-                "My obligation is to provide honest, accurate, and complete evidence — not
-                to advocate for the party instructing me."
+                "My obligation is to provide honest, accurate, and complete evidence; not to advocate for the party instructing me."
               </p>
               <p style={{ fontFamily: "Inter, sans-serif", color: GOLD, fontSize: "0.72rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>
-                — Expert Witness Declaration
+                Expert Witness Declaration
               </p>
             </div>
           </div>

@@ -58,9 +58,9 @@ export function Contact() {
 
             <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", marginBottom: "2.5rem" }}>
               {[
-                { icon: Mail, label: "Email", value: "enquiries@forensicauthorship.co.uk" },
-                { icon: Phone, label: "Telephone", value: "+44 (0)20 7946 0958" },
-                { icon: MapPin, label: "Location", value: "London & remote — nationwide instructions accepted" },
+                { icon: Mail, label: "Email", value: "Available on request" },
+                { icon: Phone, label: "Telephone", value: "Available on request" },
+                { icon: MapPin, label: "Location", value: "Birmingham; nationwide instructions accepted" },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
                   <div style={{ flexShrink: 0, width: "2.5rem", height: "2.5rem", border: "1px solid rgba(201,169,110,0.3)", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -77,8 +77,7 @@ export function Contact() {
             <div style={{ backgroundColor: CARD, border: "1px solid rgba(201,169,110,0.12)", padding: "1.5rem" }}>
               <p style={{ fontFamily: "Inter, sans-serif", color: GOLD, fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Response Time</p>
               <p style={{ fontFamily: "Inter, sans-serif", color: MUTED, fontSize: "0.875rem", lineHeight: 1.65 }}>
-                All enquiries receive a response within one working day. For urgent matters —
-                particularly where court deadlines apply — please note this in your message.
+                All enquiries receive a response within one working day. For urgent matters, particularly where court deadlines apply, please note this in your message.
               </p>
             </div>
           </div>
